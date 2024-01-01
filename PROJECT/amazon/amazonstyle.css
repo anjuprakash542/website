@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-overflow: clip;
+
+}
+
+
+.navbar {
+         display:flex;
+         height: 60px;
+         width:100%;
+         background-color: black;
+         color:white;
+        
+}
+
+#amazonlogo {
+              display: flex;
+              height:50px;
+              width:10%;
+              margin-top: 5px;
+              margin-left: 10px;
+              background-image: url(amazon_logo.jpg);
+              background-size: contain; 
+              background-position: center;
+              background-repeat: no-repeat;
+
+                                
+}
+#amazonlogo:hover {
+        border:1px solid white;
+}
+
+#location_icon {
+        display: flex;
+        margin-top: 25px;
+        margin-left: 10px;
+}
+
+#address {
+         display: inline-block;
+         height: 55px;
+         width:10%;
+         margin-left: 2px;
+         position: relative;
+         top: 5%;
+        background-color:transparent;
+        text-decoration: none;
+        color: white;
+        text-size-adjust: auto;
+        text-overflow: clip;
+}
+
+#address:hover {
+        
+              border:1px solid white;
+}
+#addresssec1 {
+             display: flex;
+             margin-top: -28px;
+             margin-left: 30px;
+             font-size: small;
+             color: darkgray;
+             text-overflow: clip;
+             width:100%;
+              
+}
+
+#addresssec2 {
+      font-weight: bold;
+      margin-left: 33px;
+      font-size: small;
+      text-overflow: clip;
+}
+#select {
+         text-size-adjust: auto;
+         text-overflow: clip;
+
+}
+#categories {
+         color: #0f1111;
+         background-color:whitesmoke;
+         height:40px;
+         width:202px;
+         margin-top: 13px;
+         margin-left: 20px;
+         text-overflow: clip;
+}
+
+#categories:hover {
+               background-color: grey;
+                
+}
+
+#searchbar {
+            display: flex;
+            height:40px;
+            width: 300px;
+            position: absolute;
+            margin-left: 457px;
+            margin-top: 13px;
+            
+}
+@media screen and (max-width:600px) {
+
+        .navbar{
+                width: 100%;
+        }
+        #amazonlogo {
+                height:50px;
+                width: 20%;
+                display: flex;
+                margin-left: 0%;
+                margin-top: -2%;
+        }
+        #address {
+           width: 10%;
+           font-size: 9px;
+           position: absolute;
+           left: 50px;
+           top: 0px;
+           background-color: transparent;
+         
+        }  
+        #addresssec1 {
+                font-size: 5px;
+                margin-top: -19px;
+                margin-left: 25px;
+        } 
+        #addresssec2 {
+                font-size: 5px;
+                margin-left: 25px;
+        }
+        #categories {
+                height: 20px;
+                 width:20%;
+                 position: absolute;
+                 left: 100px;
+                 font-size:xx-small;
+                 margin-top: 18px;
+
+        }
+        #searchbar {
+                height: 20px;
+                 position: absolute;
+                 right:-200px;
+                 margin-top: 18px;
+
+        }
+}

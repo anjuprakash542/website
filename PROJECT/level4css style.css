@@ -1,0 +1,407 @@
+
+
+body {
+    text-align:center;
+    font-size: large;
+}
+
+div {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+
+}
+
+.container {
+        height: 300px;
+        width:1000px;
+        border:4px solid black;
+        display: flex;
+}
+
+#div1 {
+      background-color: aqua;
+}
+
+#div2 {
+    background-color:brown;
+}
+
+#div3 {
+    background-color:chartreuse;
+}
+
+#div4 {
+    background-color:darkgreen;
+}
+
+.container1 {
+    height: 300px;
+    width:1000px;
+    border:4px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* The justify-content property is used in CSS to align flex container items along the main axis....the values space-around, space-event, space between all are applicable if there is a space available among the items. */
+    margin-top: 10px;
+}
+
+.container2 {
+    height: 300px;
+    width:1000px;
+    border:4px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container3 {
+    height: 300px;
+    width:1000px;
+    border:4px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    
+}
+.container4 {
+    height: 400px;
+    width:600px;
+    border:4px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*  the flex container has the display: flex property, and flex-wrap: wrap is used to allow flex items to wrap onto multiple lines if they don't fit in a single line*/
+    margin-top: 10px;
+    
+}
+
+.container5 {
+    height: 400px;
+    width:600px;
+    border:4px solid black;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.container7 {
+    display: flex;
+    height:500px;
+    width:300px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+/* justify-content will work in related to main axis..that is if flex-direction is "row or row-reverse" then the main axis is the horizontal line and cross axis is the vertical line...if the flex-direction is "column or column-reverse" then the main axis is in the vertical direction...."justify-content" has values "center", "flex-start" , "flex-end" , "space-between" , "space-end" and "space-evenly" */
+
+/* align-items is related to the alignment of items in respect to the cross-axis...mainly it is considering the elements in a single line..that is it will align the single  line elements in respect to the cross- axis and if any elements on the next line it will arrange that elements specially in respect with the cross axis */
+
+/* align-content is mainly applicable when the elements in a flex container have multiple lines..it is also in related to the cross-axis...it will arrange the whole items together into a particular value that we are given..*/
+
+#one {
+background-color: aqua;
+width:80px;
+height: 80px;
+
+
+
+}
+
+#two {
+background-color: brown;
+width:80px;
+height: 80px;
+
+}
+
+#three {
+background-color: blue;
+width:80px;
+height: 80px;
+
+}
+
+#four {
+background-color:cornflowerblue;
+width:80px;
+height: 80px;
+
+}
+
+#five {
+background-color: chartreuse;
+width:80px;
+height: 80px;
+
+}
+
+.property {
+    height: 300px;
+    width: 700px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#abc{
+ height: 50px;
+ width:100px;
+ background-color: brown;
+}
+#efg{
+height: 50px;
+width:100px;
+background-color: chocolate;
+align-self: flex-end;
+}
+
+/* align-self is applicable to only a single element and it work in respect to the cross- axis..align-self has the highest priority if we are comparing it with align-content, justify-content, align-items etc */
+#hij{
+height: 50px;
+width:100px;
+background-color: darkgreen;
+}
+
+/* there are another 2 properties that can be used in flex container..they are
+1. flex-grow
+2. flex- shrink
+we know when we are using a small container and the the elements inside the container 
+together is larger than the container then automatically the times inside the flex container
+will adjust according to the size of container..remember that the width will adjust but the height will not adjust ..so in that case if we want a particular 
+element to shrink double or any value compared to other elements we can apply the property
+"flex-shrink".this property is not applicable to height it is applicable to width..  */
+.property1 {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    border: 2px solid darkblue;
+  
+}
+
+div {
+height: 100px;
+width:250px;
+}
+
+#abcd {
+background-color: brown;
+flex-shrink: 2;
+}
+
+#efgh {
+background-color: darkorange;
+}
+
+#hijk {
+background-color: forestgreen;
+}
+
+/*  flex-grow property means the particular element width will grow in relative to the width of the main container if any available space is there..that means if we set the width of container is 300px, and if we set the div width is 50px; then if we want to increase the width of any div inside this container in the way that occupy the remaining vacant width also we can set flex-grow property..*/
+
+.property11 {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    border: 2px solid darkblue;
+  
+}
+
+div {
+height: 100px;
+width:50px;
+}
+
+#abcde {
+background-color: brown;
+
+}
+
+#efghi {
+background-color: darkorange;
+ flex-grow: 1;
+}
+
+#hijkl {
+background-color: forestgreen;
+}
+
+@media ( width: 600px)
+{
+  body { background-color: red;
+}
+}
+
+/* media query is set to get a responsive website..from the above example we got whenever the website width is set to 600px then body background color turns into red.*/
+
+@media (max-width : 700px)
+{
+  body { background-color: red;
+}
+}
+
+.container {
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    height : 700px;
+    width: 700px;
+    border:2px solid black;
+    background-color: lightseagreen;
+}
+
+.navbar{
+     height: 350px;
+     width: 350px;
+     background-color: darkgreen;
+     color: black;
+}
+
+.navbar:hover {
+    background-color: blue;
+    color: wheat;
+}
+
+/* HOVER is a pseudo class that is used to apply changes to an element when the user is pointing a cursor on the element*/
+
+/* "TRANSITION" is a property which is applied when an element changes from one state to another..fo example if we are applying the hover property to an element then the element have some changes when the cursor is pointing on that particular element..also when we are clicking a particular element and some changes occur then also we can apply transition property
+
+the property that we are applying in transition are 
+1. transition-property: property that you want to change(font-size,width,etc)
+2. transition-duration:2s/4ms etc
+3. transition-timing-function:ease-in/ease-out/linear/steps...
+4. transition-delay:2s/4ms.....
+etc
+*/
+
+#transition {
+    height:400px;
+    width:400px;
+    background-image: url(whiskey.jpg);
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: steps(4);
+    transition-duration: 1s;
+}
+/* we can also apply transition shorthand 
+for example write the above case in transition shorthand
+ie, transition: all 4s steps(4) 1s; */
+
+#transition:hover {
+        background-image: url(amazon.jpg);
+        background-size:contain;
+        color: darkgoldenrod;
+        font-weight: bolder;
+        font-size: xx-large;
+}
+
+#transition:active {
+      background-image: url(location.jpg);
+      background-size: cover;
+    
+}
+
+
+/* CSS TRANSFORM: used to apply 2D or 3D efect to elements 
+  1. transform:rotate(45deg);*/
+
+  #rotate  {
+    height:500px;
+    width:500px;
+    background-color: darkgoldenrod;
+    transform: rotateY(180deg);
+    transform:scale(1.2); /* scale is used to increase the size of the element..scale(1) is the actual size  */
+    margin-top: 150px;
+    margin-left: 150px;
+}
+#translate  {
+    height:500px;
+    width:500px;
+    background-color: crimson;
+   
+
+}
+
+#translate:hover {
+    transition-property: all;
+    transition-duration: 3s;
+    /* transform: translateY(-200px); */
+    transform: translate(200px,100px);
+   
+}
+#skew  {
+    height:500px;
+    width:500px;
+    background-color:goldenrod;
+   
+
+}
+
+#skew:hover {
+    transition-property: all;
+    transition-duration: 3s;
+    /* transform: translateY(-200px); */
+    transform: skew(-90deg);
+   
+}
+
+/* we can do animation by using css */
+
+#animation {
+    height:300px;
+    width:300px;
+    background-color: lawngreen;
+    animation-name: animation;
+    animation-duration: 0.3s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+@keyframes animation {
+       from { background-color: lawngreen;}
+       to { background-color: coral;}
+}
+#animationdrctn {
+    height:300px;
+    width:300px;
+    position:relative;
+    background-color: mediumpurple;
+    animation-name: direction;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation shorthand= animation: direction 4s linear 0s infinite normal;   */
+}
+
+@keyframes direction {
+
+       from { left: -510px;}
+       to { left: 500px;}
+}
+
+#animationpercentage {
+    height:300px;
+    width:300px;
+    position:relative;
+    background-color: mediumpurple;
+    animation-name: percentage;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation shorthand= animation: direction 4s linear 0s infinite normal;   */
+}
+
+@keyframes percentage {
+
+    0%{ left: -510px;
+        background-color: green;}
+    50% { left: 100px;
+         background-color: white;}
+    100% { left:500px;
+        background-color: orangered;}
+}

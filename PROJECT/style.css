@@ -1,0 +1,243 @@
+ 
+h1{
+    color: green;
+}
+p{
+    width:100%;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:rgb(208, 10, 26)
+}
+button{
+    color:blue;
+    background-color: aqua;
+    
+}
+body{
+    height: 100vh;
+    width:100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color:rgb(250, 128, 114);
+    background-image: url(https://i.stack.imgur.com/jGlzr.png);
+
+    
+}
+/* for the color combo we can give rgb(x,y,z) where x,y,z ranges from 0 to 255 *sveral other color combos are their, rather than rgb like HSV, HEX etc ...rgb stand for red greeb blue.../
+/* we can go through color picker by searching it into google ..from there all color combos and their values will appear */
+/* for the color combo we can go for several color palatte generators like canva ... from their we get relevant color patterns and their combo */
+
+*{
+ font-family: sans-serif;
+ color: white;
+}
+/* this selector is known as universal selector..In which the unversal code is applicable for all the html elements in the entire document ...but if we are applying any style to a particular selector that style have higher priority rather than this universal selector.*/
+
+#firstname123 {
+    color:rgb(38, 38, 207);
+    text-decoration: underline;
+    width:100%;
+    box-sizing: border-box;
+}
+/* we can set the color, styles all these things inside the "text-decoration" */
+/* this is an id slector..just put # before id */
+
+.headingfam {
+     color:brown;
+}
+/* class selector must always start with . symbol.. */
+#para2 {
+    text-align: justify;
+    color:black;
+    text-decoration:black;
+    background-color: rgba(166, 43, 43,0.8);
+    font-style: oblique;
+}
+/* left, right, center,justify,initial, inherit all these are the values of "text- align" */
+
+#heading1 {
+    font-weight: normaL;
+}
+/* When font-weight is set as normal then here h1 will display as normal text without bold...Font weight values are lighter, normal,bold,bolder....The lighter value is 100 and the bolder value is 900..ie it ranges from 100 to 900. *..Above the value 400 it will change the text into bold..*/
+
+#para3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50px;
+     /* line height means the space between each of the line*/
+   }
+/* lot of values in the font family indicates that first priority will goes to "Cambria", If the browser is not supporting this then the next priority will goes to Cochin,and so on.. */
+
+#para4 {
+    font-weight: bolder;
+    color:blue;
+    text-transform: uppercase;
+}
+
+#div1 {
+    text-align: justify;
+    color: black;
+    height: 600px;
+    /* The height property sets the height of an element. */
+    width: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: brown;
+    border-style: dotted;
+    
+}
+/* instead of doing each of the values to border , we can add all the styles in one declaration, like as follows */
+
+#div2 {
+      height:50px;
+      border: 2px solid brown;
+      border-radius: 10px;
+      /* either the radius can be set in pixel or in percentage
+      */
+}
+
+#para5 {
+    text-align: justify;
+     padding-left:50px; /* padding is used to arrange space like left margin ,right margin, top margin, bottom margin,..PADDING CAN ALSO BE USED IN THE FORMAT IN A SINGLE DECLARTION IE, "PADDING: TOP RIGHT BOTTOM LEFT;"  */
+    width: 1200px;
+    color:black;
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px 10px 10px 10px;
+    /* a single margin can set for all the values like top, right, bottom, and left */
+}
+
+/* display is an another important property in css..it have the values "inline","block","inline block" and "none" */
+/* "block" value is for occupying 100% width and inline value occupies the width  only for the letters needed  */
+
+#opacity {
+    height: 100px;
+    background-color: rgba(175, 205, 226, 0.4);
+}
+
+#fam1 {
+    color:black;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+#fam2 {
+    color:green;
+    font-weight: bolder;
+    font-size:2em;
+    width: 5em;
+}
+/* 1 em means the font size will be similar to the font size of parent...2 em means font size will be double to the font size of parent*...Also whwn width is set to 5 em note the difference that the width is 5 times that of the font size..here font size is 1 em, therefore the width is 5 times of 1 em..*/
+
+/* "rem" is an anothr unit which is called root em.. the fontsize value will be set up not based on the parent but based on the root element like <html> tag etc...that is if rem is set to any tag ..it will take the font size of body tag by default*/
+
+#fam3 {
+      height:10rem;
+      width:110px;
+    background-color:yellow;
+    
+}
+/* here height:10rem; indicate 10 times thefont size of  text inside the body tag...that is 10 times the font size of "hello"..*/
+
+/* another unit values are viewport height(vh) and viewport width(vw).If we are setting 1 vh to height that means the height is equal to 1% of our browser height..similarly if we are setting 1 vw as width..then it idicates that the width is equal to 1% of the width of browser...*/
+
+
+/* Another propety is that position property..which states that how an element can be positioned in an html document...the values of position are
+psition: static/relative/absolute/fixed...the default position of an element is always "static" ...I we set the position to static the values top,bottom, right and left will not work out  */
+
+.one {
+    display:inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border:2px solid black;
+}
+
+#fam5 {
+    position: relative;
+    top:10px;
+    right:20px;
+}
+
+#fam6 {
+    position: relative;
+    bottom:50px;
+    left: 30px;
+}
+
+#fam7 {
+     height: 6em;
+     width: 5em;
+     background-color: green;
+    position: absolute;
+    top:10px;
+     }
+     /* when position value is absolute indicates that it inherit the non static position value of its ancestor that means the parent...*/
+
+#fam8 {
+    height:200px;
+    width:200px;
+    background-color:rgba(4,70,30, 0.5);
+    position:fixed;
+    top:20px;
+    
+  }
+  /* whenever we set the position:fixed that particular item will appear it in a fixed position of the document.. */
+
+  p {
+    width:1000px;
+    font-size: larger;
+    color:black;
+    font-weight: bolder;
+  
+  }
+
+  .container {
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+  #fam9 {
+      height: 200px;
+      width: 200px;
+      display: flex;
+      background-color: blueviolet;
+      position:sticky;
+      top:20px;
+      margin-left: 100px;
+ }
+
+ #fam10 {
+          display: inline-block;
+          height:200px;
+          width:300px;
+          margin-left:50px;
+          background-color: brown;
+          position: relative;
+          left:100px;
+ }
+
+ #fam11 {
+       z-index: 1;
+       display:inline-block;
+       height:200px;
+       width:300px;
+       background-color: green;
+       position:relative;
+       
+      
+ }
+
+ /* if we are setting z-index is greater than 0.. then that element will be appear first in the overlapping strategy the other element go to the bottom position.. by default z-index for the element are 0..*/
+ 
+ #fam12 {
+       height:300px;
+       width:300px;
+       background-image: url(whiskey.jpg);
+       background-size: cover;
+ }
+
+ /* background size is set to cover because to fit the image correctly in the background*/
+
+
